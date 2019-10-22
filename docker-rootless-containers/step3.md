@@ -1,11 +1,9 @@
-Si la imagen la estamos creando nosotros
+Comparacion con el sleep infinity
 
-<pre class="file" data-filename="/home/mindundi/Dockerfile" data-target="replace">
-FROM alpine:3.7
+`docker run -d --user 1001 alpine:3.7 sleep infinity`{{execute}}
 
-RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
-USER appuser
+`docker run -d --user 999 alpine:3.7 sleep infinity`{{execute}}
 
-CMD ["cat", "/tmp/secrets.txt"]
-</pre>
+`docker run -d alpine:3.7 sleep infinity`{{execute}}
+
+`ps aux | grep sleep`{{execute}}
