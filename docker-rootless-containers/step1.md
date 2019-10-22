@@ -1,4 +1,3 @@
-4
 
 `echo "top secret secret" >> /root/secrets.txt`{{execute}}
 
@@ -11,8 +10,10 @@
 `cat /root/secrets.txt`{{execute}} 
 
 <pre class="file" data-filename="/root/mindundi/Dockerfile" data-target="replace">
-FROM debian:3.7
+FROM alpine:3.7
 CMD ["cat", "/tmp/secrets.txt"]
 </pre>
 
 `docker build -t ourimage .`{{execute}} 
+
+`docker run -v /root/secrets.txt:/tmp/secrets.txt ourimage`{{execute}} 
