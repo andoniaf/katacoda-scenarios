@@ -1,0 +1,1 @@
+While Docker requires root to run, most containers don't. In this scenario, we'll cover how easy is to run a docker container with non-root users.
