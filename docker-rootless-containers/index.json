@@ -29,15 +29,19 @@
       "host01": [
         {
           "file": "Dockerfile",
-          "target": "~/"
+          "target": "/home/mindundi/"
         }
       ]
     } 
   },
+  "files": [
+    "Dockerfile"
+  ],
   "environment": {
     "icon": "fa-docker",
     "uilayout": "editor-terminal",
-    "uimessage1": "May the force be with you." 
+    "uimessage1": "May the force be with you.",
+    "uieditorpath": "/home/mindundi"
   },
   "backend": {
     "imageid": "ubuntu"
