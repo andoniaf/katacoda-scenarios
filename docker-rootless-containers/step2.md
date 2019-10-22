@@ -6,9 +6,9 @@ Si la imagen la estamos creando nosotros
 <pre class="file" data-filename="/home/mindundi/Dockerfile" data-target="replace">
 FROM alpine:3.7
 
-RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
-USER appuser
+RUN addgroup -S ourgroup && adduser -u 999 -S ouruser -G ourgroup
+
+USER ouruser
 
 CMD ["cat", "/tmp/secrets.txt"]
 </pre>
