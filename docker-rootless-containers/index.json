@@ -29,7 +29,7 @@
       "host01": [
         {
           "file": "Dockerfile",
-          "target": "/home/mindundi"
+          "target": "~/"
         }
       ]
     } 
