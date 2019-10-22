@@ -9,7 +9,7 @@
 
 `cat /root/secrets.txt`{{execute}} 
 
-<pre class="file" data-filename="/root/mindundi/Dockerfile" data-target="replace">
+<pre class="file" data-filename="/home/mindundi/Dockerfile" data-target="replace">
 FROM alpine:3.7
 CMD ["cat", "/tmp/secrets.txt"]
 </pre>
