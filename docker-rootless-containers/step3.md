@@ -1,4 +1,4 @@
-Comparacion con el sleep infinity
+But, why is this happening? Let's see it with an example:
 
 `docker run -d --user 1001 alpine:3.7 sleep 100000`{{execute}}
 
